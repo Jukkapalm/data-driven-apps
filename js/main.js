@@ -1,12 +1,18 @@
 // Data
 // Tästä lisätään tekstejä
+
+// Värikartta
+// Raakadata / keräys  — #00d4ff (sähkön syaani)
+// AI / ML             — #ff00ff (magenta)
+// Security            — #39ff14 (neon vihreä)
+// System / infra      — #9d4edd (purple)
 const nodes = [
     {
         id:     "DA-001",
-        title:  "Project Name Here",
+        title:  "GHOST.SYS",
         desc:   "Short description of what this project does and what was analysed.",
-        tags:   ["viz", "geo"],
-        clr:    "#00ffb4",
+        tags:   ["system"],
+        clr:    "#9D4EDD",
         chars:  "0123456789ABCDEF01010110",
         link:   "#",
         github: "#",
@@ -16,23 +22,23 @@ const nodes = [
         id:     "DA-002",
         title:  "Project Name Here",
         desc:   "Short description of what this project does and what was analysed.",
-        tags:   ["pipeline", "stats"],
-        clr:    "#00b8ff",
+        tags:   [""],
+        clr:    "#00D4FF",
         chars:  "0123456789ABCDEF01010110",
         link:   "#",
         github: "#",
-        locked: false
+        locked: true
     },
     {
         id:     "DA-003",
         title:  "Project Name Here",
         desc:   "Short description of what this project does and what was analysed.",
-        tags:   ["stats"],
-        clr:    "#ff6600",
+        tags:   [""],
+        clr:    "#39DD14",
         chars:  "0123456789ABCDEF01010110",
         link:   "#",
         github: "#",
-        locked: false
+        locked: true
     }
 ];
 
