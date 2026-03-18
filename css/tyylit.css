@@ -65,7 +65,7 @@ body::after {
 }
 
 .breadcrumb-line {
-    font-size: 10px;
+    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
     letter-spacing: 4px;
     color: rgba(0, 255, 180, 0.35);
     margin-bottom: 1.5rem;
@@ -81,7 +81,7 @@ body::after {
 }
 
 .section-tag {
-    font-size: 10px;
+    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
     letter-spacing: 4px;
     color: #00FFB4;
     opacity: 0.7;
@@ -90,7 +90,7 @@ body::after {
 
 .main-title {
     font-family: var(--font-display);
-    font-size: clamp(28px, 5vw, 52px);
+    font-size: clamp(1.4rem, 3.5vw, 2.8rem);
     font-weight: 900;
     color: #FFF;
     letter-spacing: 4px;
@@ -100,7 +100,7 @@ body::after {
 .main-title .accent { color: #00FFB4; }
 
 .header-meta {
-    font-size: 11px;
+    font-size: clamp(0.72rem, 1.2vw, 0.85rem);
     letter-spacing: 2px;
     color: rgba(0, 255, 180, 0.3);
     text-align: right;
@@ -108,7 +108,7 @@ body::after {
 .header-meta strong {
     display: block;
     font-family: var(--font-display);
-    font-size: 22px;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
     color: #00FFB4;
     letter-spacing: 2px;
 }
@@ -123,7 +123,7 @@ body::after {
 
 .filter-btn {
     font-family: var(--font-mono);
-    font-size: 10px;
+    font-size: clamp(0.7rem, 1.2vw, 0.82rem);
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 6px 16px;
@@ -208,7 +208,7 @@ body::after {
     padding: 1.1rem 1.2rem 1.2rem;
 }
 .node-id {
-    font-size: 10px;
+    font-size: clamp(0.68rem, 1.1vw, 0.78rem);
     letter-spacing: 3px;
     color: var(--text-dim);
     margin-bottom: 0.3rem;
@@ -218,7 +218,7 @@ body::after {
 
 .node-title {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: clamp(0.78rem, 1.4vw, 0.95rem);
     font-weight: 700;
     letter-spacing: 1.5px;
     color: var(--text-dim);
@@ -233,7 +233,7 @@ body::after {
 .node:hover .node-title.is-locked { color: #ff2244; }
 
 .node-desc {
-    font-size: 11px;
+    font-size: clamp(0.72rem, 1.2vw, 0.85rem);
     line-height: 1.6;
     margin-bottom: 1rem;
     max-height: 0;
@@ -259,7 +259,7 @@ body::after {
 
 .node-btn {
     font-family: var(--font-mono);
-    font-size: 10px;
+    font-size: clamp(0.68rem, 1.1vw, 0.78rem);
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 7px 14px;
@@ -304,9 +304,22 @@ body::after {
 .ticker-track {
     display: flex;
     gap: 3rem;
-    font-size: 10px;
+    font-size: clamp(0.68rem, 1.1vw, 0.78rem);
     letter-spacing: 2px;
     color: rgba(0, 255, 180, 0.4);
     white-space: nowrap;
 }
 .ticker-track span.sep { color: rgba(0, 255, 180, 0.15); }
+
+.breadcrumb-line a {
+    color: rgba(0, 255, 180, 0.35);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.breadcrumb-line a:hover {
+    color: #00FFB4;
+}
+.breadcrumb-home,
+.breadcrumb-link {
+    letter-spacing: 4px;
+}
