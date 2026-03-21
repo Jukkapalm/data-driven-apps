@@ -20,6 +20,6 @@ Cyberpunk henkinen sivu data analyysi - projekteille
 | Kategoria | Väri |
 |---|---|
 | Raakadata / keräys | `#00d4ff` |
-| AI / ML | `#ff00ff` |
+| Automation | `#ff00ff` |
 | Security | `#39ff14` |
 | System / infra | `#9d4edd` |
