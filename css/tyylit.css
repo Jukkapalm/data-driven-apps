@@ -65,7 +65,7 @@ body::after {
 }
 
 .breadcrumb-line {
-    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+    font-size: clamp(0.85rem, 1.8vw, 1rem);
     letter-spacing: 4px;
     color: rgba(0, 255, 180, 0.35);
     margin-bottom: 1.5rem;
@@ -81,7 +81,7 @@ body::after {
 }
 
 .section-tag {
-    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+    font-size: clamp(0.85rem, 1.8vw, 1rem);
     letter-spacing: 4px;
     color: #00FFB4;
     opacity: 0.7;
