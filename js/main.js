@@ -12,6 +12,7 @@ const nodes = [
         title:  "GHOST.SYS",
         desc:   "Reaaliaikainen palvelinmonitorointi dashboard — seuraa CPU:ta, muistia, levyä ja verkkoliikennettä sekä analysoi automaattisesti pullonkauloja ja varoittaa ongelmista.",
         tags:   ["system"],
+        tech:   ["Python", "JS", "HTML", "CSS"],
         clr:    "#9D4EDD",
         chars:  "0123456789ABCDEF01010110",
         link:   "https://ghost-sys-1.onrender.com",
@@ -81,9 +82,10 @@ function renderNodes(filter) {
                 <div class="corner corner-tl"></div>
                 <div class="corner corner-br"></div>
                 <div class="node-content">
-                    <div class="node-id">${n.id}</div>
+                    <div class="node-id">${n.id} <span class="tag">${n.tags[0].toUpperCase()}</span></div>
                     <div class="node-title">${n.title}</div>
                     <div class="node-desc">${n.desc}</div>
+                    <div class="node-tech">${n.tech.join(' / ')}</div>
                     <div class="btn-row">
                         <a class="node-btn" href="${n.link}" target="_blank">AVAA →</a>
                         <a class="node-btn ghost" href="${n.github}" target="_blank">GITHUB</a>
